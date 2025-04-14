@@ -1,7 +1,9 @@
 
-document.getElementById('btn').addEventListener('click', function() {
 
 let numero = parseInt(document.getElementById('numero').value);
+document.getElementById('btn').addEventListener('click', function() {
+    numero = parseInt(document.getElementById('numero').value);
+    // Validar que el número sea mayor o igual a 0
 while
     (isNaN(numero) || numero < 0) {
         alert("Por favor, ingrese un número válido y mayor o igual a 0.");
@@ -9,11 +11,13 @@ while
     }
 
 function esParOImpar(numero) {
-    
+    let mensaje;
     if (numero % 2 == 0) {
-        return "par";
+        mensaje = "par";
+        return mensaje;
     } else {
-        return "impar";
+        mensaje = "impar";
+        return mensaje;     
     }
 }
 let resultado = esParOImpar(numero);
