@@ -1,7 +1,8 @@
 
 
-let numero = parseInt(document.getElementById('numero').value);
 document.getElementById('btn').addEventListener('click', function() {
+    let numero = parseInt(document.getElementById('numero').value);
+    // Validar que el número sea mayor o igual a 0
     numero = parseInt(document.getElementById('numero').value);
     // Validar que el número sea mayor o igual a 0
 while
