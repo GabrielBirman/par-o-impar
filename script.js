@@ -1,28 +1,21 @@
 
 
 document.getElementById('btn').addEventListener('click', function() {
-    let numero = parseInt(document.getElementById('numero').value);
-    // Validar que el número sea mayor o igual a 0
-    numero = parseInt(document.getElementById('numero').value);
-    // Validar que el número sea mayor o igual a 0
-while
-    (isNaN(numero) || numero < 0) {
-        alert("Por favor, ingrese un número válido y mayor o igual a 0.");
-        numero = parseInt(prompt("Ingrese un número válido y mayor o igual a 0:"));
-    }
-
-function esParOImpar(numero) {
-    let mensaje;
-    if (numero % 2 == 0) {
-        mensaje = "par";
-        return mensaje;
-    } else {
-        mensaje = "impar";
-        return mensaje;     
-    }
-}
-let resultado = esParOImpar(numero);
-document.getElementById('resultado').alert(resultado);
+    document.getElementById('btn').addEventListener('click', function() {
+        console.log("Agrega dos numeros y te los multiplica");
+      let num = parseInt(prompt("Escribe el primer numero: "));
+      function esParOImpar(num) {
+        if (num % 2 == 0) {
+          return "par";
+        } else {
+          return "impar";
+        }
+      }
+      
+      let resultado = esParOImpar(num1,num2);
+      alert("El resultado es: " + resultado);
+      });
+      
 
 
 });
